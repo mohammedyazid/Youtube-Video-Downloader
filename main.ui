@@ -118,7 +118,7 @@ border:1px solid white;
 text-transform: uppercase;
 text-align: center;
 line-height: 1;
-background-color :rgb(0, 119, 248);
+background-color: rgb(62, 63, 67);
 
 outline: none;  
     
@@ -276,9 +276,9 @@ border-radius: 10px;
       </property>
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>390</y>
-        <width>311</width>
+        <x>310</x>
+        <y>430</y>
+        <width>181</width>
         <height>31</height>
        </rect>
       </property>
@@ -286,7 +286,7 @@ border-radius: 10px;
        <cursorShape>IBeamCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(62, 63, 67);
+       <string notr="true">background-color: rgb(30, 32, 34);
 color:white;
 border-style: solid;
 border-width: 0px;
@@ -305,10 +305,10 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="placeholderText">
-       <string>Download Status</string>
+       <string/>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="rating_button">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -334,7 +334,7 @@ p, li { white-space: pre-wrap; }
        </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="length_button">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -360,7 +360,7 @@ p, li { white-space: pre-wrap; }
        </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="views_button">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -386,7 +386,7 @@ p, li { white-space: pre-wrap; }
        </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="title_button">
       <property name="geometry">
        <rect>
         <x>560</x>
@@ -412,7 +412,10 @@ p, li { white-space: pre-wrap; }
        </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_5">
+     <widget class="QPushButton" name="url_button">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>560</x>
@@ -438,36 +441,12 @@ p, li { white-space: pre-wrap; }
        </size>
       </property>
      </widget>
-     <widget class="QProgressBar" name="progressBar">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="geometry">
-       <rect>
-        <x>220</x>
-        <y>430</y>
-        <width>161</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(62, 63, 67);
-color:white;
-border-style: solid;
-border-width: 0px;
-border-radius: 10px;
-</string>
-      </property>
-      <property name="value">
-       <number>0</number>
-      </property>
-     </widget>
      <widget class="QPushButton" name="DOWNLOAD">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>390</y>
-        <width>91</width>
+        <x>150</x>
+        <y>430</y>
+        <width>151</width>
         <height>31</height>
        </rect>
       </property>
@@ -483,7 +462,7 @@ border:1px solid white;
 text-transform: uppercase;
 text-align: center;
 line-height: 1;
-background-color :rgb(0, 119, 248);
+background-color: rgb(62, 63, 67);
 
 outline: none;  
     
@@ -501,10 +480,98 @@ QPushButton:hover {
       <property name="text">
        <string>Download</string>
       </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Icons/download (1).png</normaloff>Icons/download (1).png</iconset>
+      </property>
       <property name="iconSize">
        <size>
-        <width>40</width>
-        <height>40</height>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="title_2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>340</y>
+        <width>401</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(62, 63, 67);
+color:white;
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="undoRedoEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Path </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="path_button">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>340</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+transition: all .5s ease;
+color:white;
+	font: 75 11pt &quot;Chilanka&quot;;
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+
+text-transform: uppercase;
+text-align: center;
+line-height: 1;
+background-color: rgb(30, 32, 34);
+
+outline: none;  
+    
+}
+QPushButton:hover {
+    color:rgb(24, 33, 62);
+    background-color: white;;
+}
+
+
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Icons/folder (1).png</normaloff>Icons/folder (1).png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
        </size>
       </property>
      </widget>
