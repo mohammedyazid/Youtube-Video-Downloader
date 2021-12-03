@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>887</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>881</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(40, 43, 48);
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>691</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(30, 32, 34);
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QTextEdit" name="URL">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>60</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(62, 63, 67);
+color:white;
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Video URL....</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="SUBMIT">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>60</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+transition: all .5s ease;
+color:white;
+	font: 75 11pt &quot;Chilanka&quot;;
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+border:1px solid white;
+text-transform: uppercase;
+text-align: center;
+line-height: 1;
+background-color :rgb(0, 119, 248);
+
+outline: none;  
+    
+}
+QPushButton:hover {
+    color:rgb(24, 33, 62);
+    background-color: white;;
+}
+
+
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Submit</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="title">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>140</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(62, 63, 67);
+color:white;
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="undoRedoEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Title</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="views">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>190</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(62, 63, 67);
+color:white;
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Views</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="length">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>240</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(62, 63, 67);
+color:white;
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Length</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="rating">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>290</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(62, 63, 67);
+color:white;
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Video Rating</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="status">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>390</y>
+        <width>311</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(62, 63, 67);
+color:white;
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Download Status</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>290</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Icons/star.png</normaloff>Icons/star.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>240</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Icons/timer.png</normaloff>Icons/timer.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>190</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Icons/eye.png</normaloff>Icons/eye.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>140</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Icons/format-size.png</normaloff>Icons/format-size.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>60</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Icons/url.png</normaloff>Icons/url.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>430</y>
+        <width>161</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(62, 63, 67);
+color:white;
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+</string>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="DOWNLOAD">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>390</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+transition: all .5s ease;
+color:white;
+	font: 75 11pt &quot;Chilanka&quot;;
+border-style: solid;
+border-width: 0px;
+border-radius: 10px;
+border:1px solid white;
+text-transform: uppercase;
+text-align: center;
+line-height: 1;
+background-color :rgb(0, 119, 248);
+
+outline: none;  
+    
+}
+QPushButton:hover {
+    color:rgb(24, 33, 62);
+    background-color: white;;
+}
+
+
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Download</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="youtube">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>121</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Icons/youtube (1).png</normaloff>Icons/youtube (1).png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>100</width>
+       <height>100</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>887</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
